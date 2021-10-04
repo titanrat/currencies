@@ -1,0 +1,9 @@
+actor: ApiTester
+modules:
+  enabled:
+    - PhpBrowser:
+        url: http://nginx # put your local url
+    - Laravel:
+        part: ORM
+        cleanup: false # can't wrap into transaction
+    - \Helper\Acceptance
