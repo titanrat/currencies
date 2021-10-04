@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [CurrenciesController::class, 'index']);
+Route::post('/convert', [CurrenciesController::class, 'convert']);
